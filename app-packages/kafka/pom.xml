@@ -4,15 +4,18 @@
 
 
   <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.datatorrent</groupId>
-    <artifactId>koya</artifactId>
-    <version>0.1</version>
-  </parent>
+  <groupId>com.datatorrent</groupId>
+  <version>0.1</version>
   <artifactId>koya-slider-package</artifactId>
   <packaging>jar</packaging>
   <name>koya-slider-package</name>
   <description>A package of koya on slider</description>
+
+  <properties>
+    <slider.version>0.90.0-incubating-SNAPSHOT</slider.version>
+    <kafka.src>${user.home}/kafka_2.10-0.8.2.1.tgz</kafka.src>
+    <kafka.version>kafka_2.10-0.8.2.1</kafka.version>
+  </properties>
 
   <build>
     <plugins>
@@ -40,7 +43,7 @@
              <goal>single</goal> 
            </goals>
            <configuration>
-             <descriptor>../assembly.xml</descriptor>
+             <descriptor>src/assembly/koya-with-slider.xml</descriptor>
              <appendAssemblyId>false</appendAssemblyId>
              <finalName>koya-with-slider</finalName>
              <attach>false</attach>

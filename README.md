@@ -1,3 +1,8 @@
+KOYA is now part of Apache Slider and has moved to a new location: https://github.com/apache/incubator-slider/tree/develop/app-packages/kafka
+=============================================================================================================================================
+
+
+
 Kafka On YARN (KOYA)
 ====================
 
